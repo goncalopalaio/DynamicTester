@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DynamicTester</string>
+    <string name="help_am_instrument">For a list of commands listed in logcat, run: adb shell am instrument -w -r -e debug false -e class \'com.gplio.dynamictester.DynTest\' com.gplio.dynamictester.test/androidx.test.runner.AndroidJUnitRunner</string>
+</resources>
