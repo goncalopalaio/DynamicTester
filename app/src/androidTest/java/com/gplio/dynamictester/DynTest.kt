@@ -65,6 +65,20 @@ class DynTest {
                 arguments.getString(ARG_PACKAGE),
                 arguments.getString(ARG_ID)
             )
+            Command.ROTATE_RIGHT, Command.ROTATE_LEFT, Command.ROTATE_NATURAL -> handleRotation(
+                command
+            )
+        }
+    }
+
+    private fun handleRotation(command: Command) {
+        log("Running handleRotation: $command")
+
+        when (command) {
+            Command.ROTATE_RIGHT -> device.setOrientationRight()
+            Command.ROTATE_LEFT -> device.setOrientationLeft()
+            Command.ROTATE_NATURAL -> device.setOrientationNatural()
+            else -> log("Unknown rotation command")
         }
     }
 

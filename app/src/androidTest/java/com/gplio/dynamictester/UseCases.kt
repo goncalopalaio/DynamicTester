@@ -8,7 +8,10 @@ const val ARG_ID = "id"
 enum class Command(val command: String) {
     SET_TEXT_IN_SELECTED_VIEW("set_text_in_selected_view"),
     SET_TEXT_IN_VIEW("set_text_in_view"),
-    TAP_VIEW("tap_view")
+    TAP_VIEW("tap_view"),
+    ROTATE_RIGHT("rotate_right"),
+    ROTATE_LEFT("rotate_left"),
+    ROTATE_NATURAL("rotate_natural")
 }
 
 const val MISSING_ARG_PACKAGE_MESSAGE =
