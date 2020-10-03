@@ -51,7 +51,7 @@ class AccessibilityLoggerTest {
         uiAutomation.setOnAccessibilityEventListener { event ->
             log("onAccessibilityEvent: $event")
 
-            // For example, if you wanted to write "Hello!" in every text view that is focused or clicked:
+            // For example, if you wanted to write "Hello!" in every edittext view that is focused or clicked:
             if (WRITE_TEXT_EXAMPLE_ENABLED) {
                 if (event.eventType == AccessibilityEvent.TYPE_VIEW_FOCUSED || event.eventType == AccessibilityEvent.TYPE_VIEW_CLICKED) {
                     // insertText inserts the text through AccessibilityNodeInfo but at this point you could use uiautomator methods.
